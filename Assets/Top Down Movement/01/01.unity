@@ -4218,7 +4218,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: It does not handle velocity by itself
+  m_Text: It does not handle acceleration by itself
 --- !u!222 &1074771860
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class DumbestMovement : MonoBehaviour {
 	}
 	
 	void Update () {
-		Vector3 input = useRawInput? InputHelper.DefaultJoystickInputRaw : InputHelper.DefaultJoystickInput;
+		Vector3 input = useRawInput? InputHelper.DefaultJoystickInputRawCapped : InputHelper.DefaultJoystickInput;
 		transform.position += input * speed * Time.deltaTime;
 	}
 }
