@@ -1145,6 +1145,8 @@ GameObject:
   - component: {fileID: 724681295}
   - component: {fileID: 724681298}
   - component: {fileID: 724681297}
+  - component: {fileID: 724681301}
+  - component: {fileID: 724681302}
   m_Layer: 0
   m_Name: Dino (1)
   m_TagString: Untagged
@@ -1297,6 +1299,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &724681301
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 724681294}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f15a08be34aa0c4497f381017894376, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &724681302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 724681294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ebe5233b4add24b9fb14b267739fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1326637934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1438,8 @@ GameObject:
   - component: {fileID: 1365430669}
   - component: {fileID: 1365430666}
   - component: {fileID: 1365430663}
+  - component: {fileID: 1365430667}
+  - component: {fileID: 1365430670}
   m_Layer: 0
   m_Name: Dino
   m_TagString: Untagged
@@ -1520,6 +1552,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1365430667
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1365430662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f15a08be34aa0c4497f381017894376, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!61 &1365430668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1560,6 +1609,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.2}
   serializedVersion: 2
   m_Radius: 0.2
+--- !u!114 &1365430670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1365430662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ebe5233b4add24b9fb14b267739fef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1384571448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,7 +1854,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 1708777203}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8a52260a0c7e53b4e8582c7f4adaf884, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

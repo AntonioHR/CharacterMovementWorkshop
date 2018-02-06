@@ -41,7 +41,7 @@ public class HorizontalForceSidescrollerMove : MonoBehaviour {
     bool facingLeft = false;
 
 
-    public float WalkSpeed { get { return rb.velocity.x; } }
+    public Vector2 Velocity { get { return rb.velocity; } }
     public bool FacingLeft { get { return facingLeft; } }
     public bool FeetOnGround
     {
