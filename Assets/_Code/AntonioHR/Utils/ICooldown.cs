@@ -7,19 +7,21 @@
     }
     public class DummyCooldown : ICooldown
     {
-        public bool IsOver
+        public static ICooldown OutOfCooldown { get { return new DummyCooldown(true); } }
+        public static ICooldown OnCooldown { get { return new DummyCooldown(false); } }
+
+        private DummyCooldown(bool isOver)
         {
-            get
-            {
-                return true;
-            }
+            this.IsOver = isOver;
         }
+
+        public bool IsOver { get; private set; }
 
         public float Progress
         {
             get
             {
-                return 1;
+                return IsOver ? 1 : 0;
             }
         }
     }

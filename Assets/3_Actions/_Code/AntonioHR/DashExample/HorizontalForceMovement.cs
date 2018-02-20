@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 
 
-namespace AntonioHR.DashExample.Movers
+namespace AntonioHR.DashExample
 {
     public class HorizontalForceMovement
     {
@@ -46,7 +46,6 @@ namespace AntonioHR.DashExample.Movers
         public void Move(float horizontalMove)
         {
             this.input = horizontalMove;
-            //input = InputHelper.DefaultJoystickInputRawCapped;
 
             AddHorizontalMoveForce();
             ApplyFriction();

@@ -1,5 +1,4 @@
-﻿using AntonioHR.DashExample.Movers;
-using AntonioHR.DashExample.PlayerStates;
+﻿using AntonioHR.DashExample.PlayerStates;
 using AntonioHR.Utils;
 using System;
 using UnityEngine;
@@ -36,7 +35,7 @@ namespace AntonioHR.DashExample
 
 
         private PlayerState state;
-        private ICooldown dashCooldown = new DummyCooldown();
+        private ICooldown dashCooldown = DummyCooldown.OutOfCooldown;
 
 
 
